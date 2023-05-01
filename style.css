@@ -1,0 +1,110 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    background-image: url("Assets/Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+.card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    border-radius: 20px;
+}
+.card-left
+{
+    width: 50%;
+    text-align: center;
+    background-color: rgb(65, 63, 87);
+    padding: 50px 20px  0 20px;
+    background-image: url("Assets/iPhone\ Mockup.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px 0 0 20px;
+}
+.card-left>h1
+{
+    color: white;
+}
+.card-left>p
+{
+    color: rgb(255, 235, 235);
+}
+img
+{
+    width: 300px;
+    height: auto;    
+}
+.card-right
+{   
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    background-color: white;
+    padding: 50px;
+    border-radius: 0 20px 20px 0;
+}
+form
+{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label
+{
+    font-weight: bolder;
+}
+input
+{
+    padding: 20px;
+}
+span{
+    font-weight: lighter;
+}
+form>div
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: larger;
+}
+.account
+{
+    background-color: rgb(14, 4, 60);
+    color: ghostwhite;
+    border-radius:5px;
+}
+
+@media screen and (width<800px){
+    .card
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .card-left,.card-right
+    {
+       
+        border-radius: 0;
+    }
+}
